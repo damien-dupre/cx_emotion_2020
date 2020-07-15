@@ -1,6 +1,6 @@
 ---
 title: "CX Emotion 2020"
-subtitle: "Disenchantment with Emotion Recognition Technologies: Implications and Future Directions"
+subtitle: "Facial and Physiological Expressions of Emotion, with a Look at Bias"
 author: "Damien Dupré"
 date: "Dublin City University - July 22nd, 2020"
 output:
@@ -54,7 +54,7 @@ library(tweetrmd)
 
 layout: true
   
-<div class="custom-footer"><span>CX Emotion - Disenchantment with Emotion Recognition Technologies - Dupré (2020) </span></div>
+<div class="custom-footer"><span>CX Emotion - Facial and Physiological Expressions of Emotion - Dupré (2020) </span></div>
 
 ---
 
@@ -211,7 +211,7 @@ Affective states refer to **"valenced (good versus bad) states"** (Gross, 2010, 
 
 # Holistic Definition of Emotions
 
-> Emotion is defined as “an **episode of interrelated, synchronized changes** in the states of **all or most of the five organismic subsystems** in **response to the evaluation of an external or internal stimulus** event as relevant to major concerns of the organism” (Scherer, 2001, p.93 [`r emo::ji("link")`](https://global.oup.com/academic/product/appraisal-processes-in-emotion-9780195130072))
+> Emotion is defined as *“an **episode of interrelated, synchronized changes** in the states of **all or most of the five organismic subsystems** in **response to the evaluation of an external or internal stimulus** event as relevant to major concerns of the organism”.* Scherer (2001, p.93 [`r emo::ji("link")`](https://global.oup.com/academic/product/appraisal-processes-in-emotion-9780195130072))
 
 --
 
@@ -268,10 +268,10 @@ In parallel, multiple tools and databases have been developed to investigate emo
 ]
 
 .pull-right[
-```{r out.width="70%"}
-knitr::include_graphics("media/affective_computing.jpg")
+```{r out.width="80%"}
+knitr::include_graphics("media/rise_affective_computing.png")
 ```
-.center.tiny[*Credit: Picard (2000)* [`r emo::ji("link")`](https://mitpress.mit.edu/books/affective-computing)]
+.center.tiny[*Credit: The Guardian (2019)* [`r emo::ji("link")`](https://www.theguardian.com/technology/2019/mar/06/facial-recognition-software-emotional-science)]
 ]
 
 ---
@@ -683,7 +683,7 @@ Factors influencing the accuracy to recognize emotion (e.g., Bryant & Howard, 20
 - Ethnicity
 - Age
 
-> "While most users will get a spot-on result, we acknowledge that the ethnicity classifiers currently offered (Black, White, Asian, Hispanic, ‘Other’) fall short of representing the richly diverse and rapidly evolving tapestry of culture and race."
+> *"While most users will get a spot-on result, we acknowledge that the ethnicity classifiers currently offered (Black, White, Asian, Hispanic, ‘Other’) fall short of representing the richly diverse and rapidly evolving tapestry of culture and race."*
 Brackeen, 2017 [`r emo::ji("link")`](https://www.kairos.com/blog/we-ve-retired-our-diversity-recognition-app-here-s-why)
 
 ---
@@ -747,17 +747,80 @@ tags$video(
 
 ---
 
-# No Evidence of Emotion Categories
+# Absence of Scientific Support
 
-Despite the availability of automatic classifiers, there is no scientific evidence of reliable expressive and physiological patterns corresponding to emotional categories
+Despite the development of automatic classifiers on the idea that emotional categories can be inferred from sensors, there is **no scientific evidence** of reliable expressive and physiological patterns corresponding to emotional categories:
 
-* No one-to-one mapping (Kappas, 2003 [`r emo::ji("link")`](https://doi.org/10.1007/978-1-4615-1063-5_11))
+.pull-left[
+* No one-to-one mapping between patterns and categories (Kappas, 2003 [`r emo::ji("link")`](https://doi.org/10.1007/978-1-4615-1063-5_11))
 * Facial expression often communicates something other than an emotional state (Barrett, Adolphs, Marsella, Martinez , & Pollak, 2019 [`r emo::ji("link")`](https://doi.org/10.1177/1529100619832930))
+]
+
+.pull-right[
+```{r out.width="100%"}
+tweet_screenshot(
+  tweet_url("truthbegolduk", "1152169980722655232"),
+  maxwidth = 400,
+  hide_media = FALSE,
+  theme = "dark"
+  )
+```
+]
 
 ---
 class: title-slide, middle
 
 ## 3.3 Ethical Considerations
+
+---
+
+# Current Challenges
+
+With regard to what has been said, we have two problems here, and data/emotion privacy is not one of them:
+
+.pull-left[
+
+1. Physiological and expressive measures are prone to errors
+
+2. Models used by automatic classifiers to categorise emotions are not reliable
+
+Therefore, **should we use these automatic classifiers?**
+
+]
+
+.pull-right[
+```{r out.width="80%"}
+knitr::include_graphics("media/ai_now.png")
+```
+.center.tiny[*Credit: Tech Xplore (2019)* [`r emo::ji("link")`](https://techxplore.com/news/2019-12-ai-watchdogs-rips-emotion-tech.html)]
+]
+
+> *"Regulators should ban the use of affect recognition in important decisions that impact people's lives and access to opportunities. Until then, AI companies should stop deploying it."* AI Now 2019 Report [`r emo::ji("link")`](https://ainowinstitute.org/AI_Now_2019_Report.html)
+
+---
+
+# Future Directions
+
+Warning, do not throw the baby out with the bathwater! "All models are wrong, but some are useful" (Box)
+
+.pull-left[
+The errors in face and physiological measures are reducing with improved techniques and materials.
+
+Most of automatic classifiers of facial expressions have already moved from a classification in categories to a classification in dimensions such as Valence/Pleasure and Arousal/Activation:
+
+* More reliable scientific evidences for a dimensional perspective
+* Not restricted to specific patterns
+]
+.pull-right[
+```{r out.width="100%"}
+tweet_screenshot(
+  tweet_url("DigitalTrends", "1184388139395108864"),
+  maxwidth = 400,
+  hide_media = FALSE,
+  theme = "dark"
+  )
+```
+]
 
 ---
 class: inverse, mline, center, middle
