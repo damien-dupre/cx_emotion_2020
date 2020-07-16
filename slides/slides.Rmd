@@ -56,34 +56,34 @@ layout: true
   
 <div class="custom-footer"><span>CX Emotion - Facial and Physiological Expressions of Emotion - Dupré (2020) </span></div>
 
----
+<!-- --- -->
 
-# My Journey into Emotion Science
+<!-- # My Journey into Emotion Science -->
 
-#### Developement of the DynEmo Facial Expression Database (Master)
+<!-- #### Developement of the DynEmo Facial Expression Database (Master) -->
 
-* Dynamic and spontaneous emotions
-* Assessed with self-reports and by observers
+<!-- * Dynamic and spontaneous emotions -->
+<!-- * Assessed with self-reports and by observers -->
 
-#### Analysis of Emotional User Experience of Innovative Tech. (Industrial PhD)
+<!-- #### Analysis of Emotional User Experience of Innovative Tech. (Industrial PhD) -->
 
-* Understand users' acceptance of technologies from their emotional response
-* Based on multivariate self-reports
+<!-- * Understand users' acceptance of technologies from their emotional response -->
+<!-- * Based on multivariate self-reports -->
 
-#### Evaluation of Emotions from Facial and Physiological Measures (Industrial PostDoc)
+<!-- #### Evaluation of Emotions from Facial and Physiological Measures (Industrial PostDoc) -->
 
-* Applications to marketing, sports and automotive industries
-* Dynamic changes with trend extraction techniques
+<!-- * Applications to marketing, sports and automotive industries -->
+<!-- * Dynamic changes with trend extraction techniques -->
 
-#### Performance Prediction using Machine Learning (Academic PostDoc)
+<!-- #### Performance Prediction using Machine Learning (Academic PostDoc) -->
 
-* Application to sport analytics
-* Big Data treatment (> 1 million users with activities recorded in the past 5 years)
+<!-- * Application to sport analytics -->
+<!-- * Big Data treatment (> 1 million users with activities recorded in the past 5 years) -->
 
 ---
 class: inverse, mline, center, middle
 
-# 1. The (Data) Science of Emotions
+# 1. A Closer Look at Emotion Science
 
 ---
 
@@ -91,19 +91,19 @@ class: inverse, mline, center, middle
 
 The emotional experience determines our perceptions and leads our decisions:
 
-* In every life (e.g., the Phineas Gage Case; Damasio, 1994)
-* In consumer behaviours (e.g., emotions are trigged from product designs and can facilitate buying decisions; Mahlke, 2008; Bloch, 1995)
+* In every life (e.g., the Phineas Gage Case; see also [Bechara, Damasio, & Damasio, 2000](https://doi.org/10.1093/cercor/10.3.295))
+* In consumer behaviours (e.g., emotions are trigged from product designs and can facilitate buying decisions; [Mahlke & Minge, 2008](https://doi.org/10.1007/978-3-540-85099-1_5); [Bloch, 1995](https://doi.org/10.1177/002224299505900302))
 
 ```{r out.width = "60%"}
 knitr::include_graphics("media/phineas_gage.jpg")
 ```
-.center.tiny[Modeling the path of the tamping iron through the Gage skull and its effects on white matter structure.<br />*Credit: Van Horn, Irimia, Torgerson, Chambers, Kikinis & Toga (2012)* [`r emo::ji("link")`](https://doi.org/10.1371/journal.pone.0037454)]
+.center.tiny[Modeling the path of the tamping iron through the Gage skull and its effects on white matter structure.<br />Credit: Van Horn, Irimia, Torgerson, Chambers, Kikinis & Toga (2012) [`r emo::ji("link")`](https://doi.org/10.1371/journal.pone.0037454)]
 
 ---
 
 # What Emotions are?
 
-> *“Everyone knows what an emotion is, until asked to give a definition. Then, it seems no one knows.”* (Fehr and Russell, 1984) 
+> *“Everyone knows what an emotion is, until asked to give a definition. Then, it seems no one knows.”* - [Fehr & Russell (1984, p.464)](https://doi.org/10.1037/0096-3445.113.3.464) 
 
 ```{r}
 tags$video(
@@ -115,7 +115,7 @@ tags$video(
   style = "display:block; margin: 0 auto;"
   )
 ```
-.center.tiny[K-fee commercial. *Credit: Cobblestone Filmproduktion (2004)* [`r emo::ji("link")`](https://www.youtube.com/watch?v=sA_wUTLhSAU)]
+.center.tiny[K-fee commercial. Credit: Cobblestone Filmproduktion (2004) [`r emo::ji("link")`](https://www.youtube.com/watch?v=sA_wUTLhSAU)]
 
 ---
 
@@ -149,6 +149,8 @@ knitr::include_graphics("media/emo_intensity.png")
 ```{r out.width="27%"}
 knitr::include_graphics("media/emo_rapidity.png")
 ```
+
+.center.tiny[Adapted from Scherer (2005) [`r emo::ji("link")`](https://doi.org/10.1177/0539018405058216)]
 
 ]
 
@@ -188,7 +190,7 @@ knitr::include_graphics("media/emo_rapidity.png")
 
 # What Emotions are not?
 
-Affective states refer to **"valenced (good versus bad) states"** (Gross, 2010, p. 212 [`r emo::ji("link")`](https://doi.org/10.1177/1754073910361982)):
+Affective states refer to **"valenced (good versus bad) states"** ([Gross, 2010, p.212](https://doi.org/10.1177/1754073910361982)):
 
 * Attitudes are **relatively stable beliefs about the goodness or badness of something or someone**
 
@@ -205,20 +207,20 @@ Affective states refer to **"valenced (good versus bad) states"** (Gross, 2010, 
 [Affective States]->[Moods]
 ```
 
-.center.tiny[There are many types of affective states, including attitudes, moods, and emotions.<br />*Credit: Gross (2010)* [`r emo::ji("link")`](https://doi.org/10.1177/1754073910361982)]
+.center.tiny[There are many types of affective states, including attitudes, moods, and emotions.<br />Adapted from Gross (2010) [`r emo::ji("link")`](https://doi.org/10.1177/1754073910361982)]
 
 ---
 
 # Holistic Definition of Emotions
 
-> Emotion is defined as *“an **episode of interrelated, synchronized changes** in the states of **all or most of the five organismic subsystems** in **response to the evaluation of an external or internal stimulus** event as relevant to major concerns of the organism”.* Scherer (2001, p.93 [`r emo::ji("link")`](https://global.oup.com/academic/product/appraisal-processes-in-emotion-9780195130072))
+> Emotion is defined as *“an **episode of interrelated, synchronized changes** in the states of **all or most of the five organismic subsystems** in **response to the evaluation of an external or internal stimulus** event as relevant to major concerns of the organism”.* - [Scherer (2001, p.93)](https://global.oup.com/academic/product/appraisal-processes-in-emotion-9780195130072)
 
 --
 
 ```{r out.width = "80%"}
 knitr::include_graphics("media/inside_out.gif")
 ```
-.center.tiny[Inside Out. *Credit: Pixar Animation Studios (2015)* [`r emo::ji("link")`](https://i.imgur.com/ifdEAOx.gif)]
+.center.tiny[Inside Out. Credit: Pixar Animation Studios (2015) [`r emo::ji("link")`](https://i.imgur.com/ifdEAOx.gif)]
 
 ---
 
@@ -250,13 +252,13 @@ Emotions have 5 functions each corresponding to a specific component/subsystem:
 [<abstract>Trigger Event]--:>[Emotion]
 ```
 
-.center.tiny[The dynamic architecture of the component process model.<br />*Credit: Scherer (2009)* [`r emo::ji("link")`](https://doi.org/10.1080/02699930902928969)]
+.center.tiny[The dynamic architecture of the component process model.<br />Adapted from Scherer (2009) [`r emo::ji("link")`](https://doi.org/10.1080/02699930902928969)]
 
 ---
 
 # Developement of Affective Computing
 
-Despite the usefulness of the Component Process Model, research on emotions have lead to a "conceptual and definitional chaos" (Buck, 1990, p.330 [`r emo::ji("link")`](https://doi.org/10.1207/s15327965pli0104_15)):
+Despite the usefulness of the Component Process Model, research on emotions have lead to a "conceptual and definitional chaos" ([Buck, 1990, p.330](https://doi.org/10.1207/s15327965pli0104_15)):
 
 * There is still no consensual agreement between researchers
 * Some assumptions of the broad audience are not supported by scientific evidences
@@ -271,7 +273,7 @@ In parallel, multiple tools and databases have been developed to investigate emo
 ```{r out.width="80%"}
 knitr::include_graphics("media/rise_affective_computing.png")
 ```
-.center.tiny[*Credit: The Guardian (2019)* [`r emo::ji("link")`](https://www.theguardian.com/technology/2019/mar/06/facial-recognition-software-emotional-science)]
+.center.tiny[Credit: The Guardian (2019) [`r emo::ji("link")`](https://www.theguardian.com/technology/2019/mar/06/facial-recognition-software-emotional-science)]
 ]
 
 ---
@@ -288,16 +290,15 @@ class: title-slide, middle
 
 # Current Methods
 
-|Type        |Measure                          |Tool                             |
-|------------|---------------------------------|---------------------------------|
-|Invasive    |Electric Activity of Face Muscles|Facial Electromyography (fEMG)   |
-|Non-Invasive|Human Observer Visual Recognition|Manual Annotation Software       |
-|Non-Invasive|Landmark Spatial Configuration   |Automatic Recognition Classifiers|      
+![:col_header Type, Measure, Tool]
+![:col_row Invasive, Electric Activity of Face Muscles, Facial Electromyography (fEMG)]
+![:col_row Non-Invasive, Human Observer Visual Recognition, Manual Annotation Software]
+![:col_row Non-Invasive, Landmark Spatial Configuration, Automatic Recognition Classifiers]
 
 ```{r out.width="75%"}
 knitr::include_graphics("media/affectiva.jpg")
 ```
-.center.tiny[*Credit: Affectiva* [`r emo::ji("link")`](https://www.affectiva.com/news-item/affectiva-launches-multi-modal-automotive-in-cabin-ai-to-improve-road-safety-and-accelerate-autonomy-2/)]
+.center.tiny[Credit: Affectiva [`r emo::ji("link")`](https://www.affectiva.com/news-item/affectiva-launches-multi-modal-automotive-in-cabin-ai-to-improve-road-safety-and-accelerate-autonomy-2/)]
 
 ---
 
@@ -305,10 +306,10 @@ knitr::include_graphics("media/affectiva.jpg")
 
 Development of the technology:
 
-* First attempt by reported by Suwa, Sugie, & Fujimura (1978)
-* Numerous different academic systems since (see revue by Zeng et al., 2009)
-* VicarVision first company to provide a commercial access to FaceReader in 2005
-* Today more than 20 companies for applications to automotive, sport, health, human resources, security or marketing purposes
+* First attempt by reported by [Suwa, Sugie, & Fujimura (1978)](https://books.google.ie/books?id=P4s-AQAAIAAJ)
+* Numerous academic systems since (see revue by [Zeng, Pantic, Roisman, & Huang, 2009]())
+* VicarVision to develop the first commercial automatic classifier ([den Uyl & van Kuilenburg, 2005](http://www.vicarvision.nl/pub/fc_denuyl_and_vankuilenburg_2005.pdf))
+* Today more than 20 companies for applications to automotive, sport, health, human resources, security or marketing purposes ([Dupré, Andelic, Morrison, & McKeown, 2018](https://doi.org/10.1109/PERCOMW.2018.8480127))
 
 .pull-left[
 A process in 3 steps:
@@ -324,7 +325,7 @@ Result is a recognition probability for a labelled category (e.g., Action Unit, 
 ```{r out.width="70%"}
 knitr::include_graphics("media/automatic_steps.png")
 ```
-.center.tiny[*Credit: Dupré, Andelic, Morrison & McKeown (2018)* [`r emo::ji("link")`](https://doi.org/10.1109/PERCOMW.2018.8480127)]
+.center.tiny[Credit: Dupré, Andelic, Morrison & McKeown (2018) [`r emo::ji("link")`](https://doi.org/10.1109/PERCOMW.2018.8480127)]
 ]
 
 ---
@@ -334,12 +335,12 @@ knitr::include_graphics("media/automatic_steps.png")
 Emotion categories/dimensions are inferred from facial expressions either:
 
 .pull-left[
-* Directly, by matching Action Units to prototypical expressions of emotions (Emotion coded by the FACS; Ekman, Friesen, & Hager, 2002 [`r emo::ji("link")`](https://www.paulekman.com/facial-action-coding-system/))
+* Directly, by matching Action Units to prototypical expressions of emotions (Emotion coded by the FACS; [Ekman, Friesen, & Hager, 2002](https://www.paulekman.com/facial-action-coding-system/))
 
 ```{r out.width="85%"}
 knitr::include_graphics("media/emfacs_example.jpg")
 ```
-.center.tiny[*Credit: Bartlett, Littlewort, Frank, Lainscsek, Fasel, & Movellan (2006) * [`r emo::ji("link")`](https://www.doi.org/10.1109/FGR.2006.55)]
+.center.tiny[Credit: Bartlett, Littlewort, Frank, Lainscsek, Fasel, & Movellan (2006) [`r emo::ji("link")`](https://www.doi.org/10.1109/FGR.2006.55)]
 
 ]
 
@@ -349,7 +350,7 @@ knitr::include_graphics("media/emfacs_example.jpg")
 ```{r out.width="42%"}
 knitr::include_graphics("media/affdex_example.jpg")
 ```
-.center.tiny[*Credit: ThinkApps* [`r emo::ji("link")`](http://thinkapps.com/blog/development/machine-intelligence-affectiva-interview/)]
+.center.tiny[Credit: ThinkApps [`r emo::ji("link")`](http://thinkapps.com/blog/development/machine-intelligence-affectiva-interview/)]
 
 ]
 
@@ -370,7 +371,6 @@ data_expression <- "data/automatic_recognition_data.csv" %>%
     TRUE ~ "non-target"
   )) 
 ```
-
 
 ---
 
@@ -401,6 +401,7 @@ plot <- data_expression %>%
 plotly::ggplotly(plot) %>%
   layout(legend = list(orientation = "h", x = 0.4, y = -0.2))
 ```
+.center.tiny[Expression of Disgust correctly recognized, the others led to subtle or incorrect recognition.]
 
 ---
 
@@ -431,6 +432,7 @@ plot <- data_expression %>%
 plotly::ggplotly(plot) %>%
   layout(legend = list(orientation = "h", x = 0.4, y = -0.2))
 ```
+.center.tiny[All four expressions are partially correctly recognized but some non relevant emotions are also recognized.]
 
 ---
 class: title-slide, middle
@@ -441,11 +443,12 @@ class: title-slide, middle
 
 # Physiology and Emotions
 
-Emotions modulate and influence physiological rhythms (Kreibig, Samson, & Gross, 2013 [`r emo::ji("link")`](https://doi.org/10.1111/psyp.12064)):
+Emotions modulate and influence physiological rhythms ([Kreibig, Samson, & Gross, 2013](https://doi.org/10.1111/psyp.12064)):
 
 ```{r out.width="70%"}
 knitr::include_graphics("media/physio.png")
 ```
+.center.tiny[Conceptual representation of the relationship between physiological rythms and emotions.]
 
 ---
 
@@ -577,7 +580,7 @@ data_physio %>%
 
 # Example of Emotional Trends
 
-Multivariate physiological analysis of emotions during a mountain biking experience (Dupré, Bland, Bolster, Morrison, & McKeown, 2017 [`r emo::ji("link")`](https://doi.org/10.1007/978-3-319-60822-8_4))
+Multivariate physiological analysis of emotions during a mountain biking experience ([Dupré, Bland, Bolster, Morrison, & McKeown, 2017](https://doi.org/10.1007/978-3-319-60822-8_4))
 
 ```{r eval=params$eval_rights}
 tags$video(
@@ -622,7 +625,7 @@ Face recognition depends on:
 ```{r out.width="60%"}
 knitr::include_graphics("media/fail_face_recognition.png")
 ```
-.center.tiny[*Credit: Oddee.com* [`r emo::ji("link")`](https://www.oddee.com/item_98248.aspx)]
+.center.tiny[Credit: Oddee.com [`r emo::ji("link")`](https://www.oddee.com/item_98248.aspx)]
 
 ]
 
@@ -633,13 +636,13 @@ Physiological measures are sensitive to:
 .small[
 - Vibrations
 - Correct positioning
-- Singular genetic predispositions (e.g., sudation level, situs inversus)
+- Singular genetic predispositions (e.g., morphology, sudation level, situs inversus)
 ]
 
 ```{r out.width="100%"}
 knitr::include_graphics("media/heart_rate_pepper.gif")
 ```
-.center.tiny[*Credit: Techoob.com* [`r emo::ji("link")`](https://www.youtube.com/watch?v=x2YF8a0SoNU)]
+.center.tiny[Credit: Techoob.com [`r emo::ji("link")`](https://www.youtube.com/watch?v=x2YF8a0SoNU)]
 
 ]
 
@@ -650,9 +653,9 @@ knitr::include_graphics("media/heart_rate_pepper.gif")
 The precision of devices is not monitored and no standard provides safe guards to users:
 
 .pull-left[
-* Academic benchmarks (e.g., Bent, Goldstein, Kibbe, & Dunn, 2020 [`r emo::ji("link")`](https://doi.org/10.1038/s41746-020-0226-6)) are used to support legal class-actions over misled consumers on the ability of accurately monitoring physiological changes (Sawyer, 2019 [`r emo::ji("link")`](https://doi.org/10.1080/07303084.2019.1649563))
+* Academic benchmarks (e.g., [Bent, Goldstein, Kibbe, & Dunn, 2020](https://doi.org/10.1038/s41746-020-0226-6)) are used to support legal class-actions over misled consumers on the ability of accurately monitoring physiological changes ([Sawyer, 2019](https://doi.org/10.1080/07303084.2019.1649563))
 
-* According a benchmark of 8 commercially available systems, the accuracy of automatic classifiers of facial expressions varies between 48% and 62% (Dupré, Krumhuber, Küster, & McKeown, 2020 [`r emo::ji("link")`](https://doi.org/10.1371/journal.pone.0231968))
+* According a benchmark of 8 commercially available systems, the accuracy of automatic classifiers of facial expressions varies between 48% and 62% ([Dupré, Krumhuber, Küster, & McKeown, 2020](https://doi.org/10.1371/journal.pone.0231968))
 ]
 
 .pull-right[
@@ -675,16 +678,15 @@ class: title-slide, middle
 
 # Limitations of WEIRD Databases
 
-Lack of diversity when using facial expression databases with Western/White, Educated, Industrialized, Rich, and Democratic participants (Arnett, 2008 [`r emo::ji("link")`](https://doi.org/10.1037/0003-066X.63.7.602); Raji & Buolamwini, 2019, [`r emo::ji("link")`](https://doi.org/10.1145/3306618.3314244)).
+Lack of diversity when using facial expression databases with Western/White, Educated, Industrialized, Rich, and Democratic participants ([Arnett, 2008](https://doi.org/10.1037/0003-066X.63.7.602); [Raji & Buolamwini, 2019](https://doi.org/10.1145/3306618.3314244)).
 
-Factors influencing the accuracy to recognize emotion (e.g., Bryant & Howard, 2019 [`r emo::ji("link")`](https://doi.org/10.1145/3306618.3314284); Rhue, 2018 [`r emo::ji("link")`](http://dx.doi.org/10.2139/ssrn.3281765)):
+Factors influencing the accuracy to recognize emotion (e.g., [Bryant & Howard, 2019](https://doi.org/10.1145/3306618.3314284); [Rhue, 2018](http://dx.doi.org/10.2139/ssrn.3281765)):
 - Identity
 - Gender
 - Ethnicity
 - Age
 
-> *"While most users will get a spot-on result, we acknowledge that the ethnicity classifiers currently offered (Black, White, Asian, Hispanic, ‘Other’) fall short of representing the richly diverse and rapidly evolving tapestry of culture and race."*
-Brackeen, 2017 [`r emo::ji("link")`](https://www.kairos.com/blog/we-ve-retired-our-diversity-recognition-app-here-s-why)
+> *"While most users will get a spot-on result, we acknowledge that the ethnicity classifiers currently offered (Black, White, Asian, Hispanic, ‘Other’) fall short of representing the richly diverse and rapidly evolving tapestry of culture and race."* - [Brackeen (2017)](https://www.kairos.com/blog/we-ve-retired-our-diversity-recognition-app-here-s-why)
 
 ---
 
@@ -711,7 +713,7 @@ As a result, automatic classifiers cannot recognize the diversity of facial expr
 ```{r out.width="100%"}
 knitr::include_graphics("media/six_basic_emotion.jpg")
 ```
-.center.tiny[*Credit: Ekman, Friesen, & Hager (2002)* [`r emo::ji("link")`](https://www.paulekman.com/facial-action-coding-system/)]
+.center.tiny[Credit: Ekman, Friesen, & Hager (2002) [`r emo::ji("link")`](https://www.paulekman.com/facial-action-coding-system/)]
 ]
 
 ---
@@ -720,12 +722,12 @@ knitr::include_graphics("media/six_basic_emotion.jpg")
 
 A same facial expression can be interpreted differently according to the context in which the expression is produced
 
-Examples of athletes' victory (e.g., raging or crying after wining; see Martinez, 2019 [`r emo::ji("link")`](https://doi.org/10.1073/pnas.1902661116))
+Examples of athletes' victory (e.g., raging or crying after wining; see [Martinez, 2019](https://doi.org/10.1073/pnas.1902661116))
 
 ```{r out.width="100%", fig.cap=""}
 knitr::include_graphics("media/automatic_rec.png")
 ```
-.center.tiny[Emotion recognized as 'Anger' but the context reveals an experience closer to 'Intense Joy']
+.center.tiny[Emotion recognized as 'Anger' but the context reveals an experience closer to 'Intense Joy'.]
 
 ---
 
@@ -752,8 +754,8 @@ tags$video(
 Despite the development of automatic classifiers on the idea that emotional categories can be inferred from sensors, there is **no scientific evidence** of reliable expressive and physiological patterns corresponding to emotional categories:
 
 .pull-left[
-* No one-to-one mapping between patterns and categories (Kappas, 2003 [`r emo::ji("link")`](https://doi.org/10.1007/978-1-4615-1063-5_11))
-* Facial expression often communicates something other than an emotional state (Barrett, Adolphs, Marsella, Martinez , & Pollak, 2019 [`r emo::ji("link")`](https://doi.org/10.1177/1529100619832930))
+* No one-to-one mapping between patterns and categories ([Kappas, 2003](https://doi.org/10.1007/978-1-4615-1063-5_11))
+* Facial expression often communicates something other than an emotional state ([Barrett, Adolphs, Marsella, Martinez, & Pollak, 2019](https://doi.org/10.1177/1529100619832930))
 ]
 
 .pull-right[
@@ -792,10 +794,10 @@ Therefore, **should we use these automatic classifiers?**
 ```{r out.width="80%"}
 knitr::include_graphics("media/ai_now.png")
 ```
-.center.tiny[*Credit: Tech Xplore (2019)* [`r emo::ji("link")`](https://techxplore.com/news/2019-12-ai-watchdogs-rips-emotion-tech.html)]
+.center.tiny[Credit: Tech Xplore (2019) [`r emo::ji("link")`](https://techxplore.com/news/2019-12-ai-watchdogs-rips-emotion-tech.html)]
 ]
 
-> *"Regulators should ban the use of affect recognition in important decisions that impact people's lives and access to opportunities. Until then, AI companies should stop deploying it."* AI Now 2019 Report [`r emo::ji("link")`](https://ainowinstitute.org/AI_Now_2019_Report.html)
+> *"Regulators should ban the use of affect recognition in important decisions that impact people's lives and access to opportunities. Until then, AI companies should stop deploying it."* - [AI Now Institute (2019)](https://ainowinstitute.org/AI_Now_2019_Report.html)
 
 ---
 
