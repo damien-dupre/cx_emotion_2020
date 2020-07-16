@@ -103,7 +103,7 @@ knitr::include_graphics("media/phineas_gage.jpg")
 
 # What Emotions are?
 
-> *“Everyone knows what an emotion is, until asked to give a definition. Then, it seems no one knows.”* - [Fehr & Russell (1984, p.464)](https://doi.org/10.1037/0096-3445.113.3.464) 
+> *“Everyone knows what an emotion is, until asked to give a definition. Then, it seems no one knows.”* - [Fehr & Russell (1984, p. 464)](https://doi.org/10.1037/0096-3445.113.3.464) 
 
 ```{r}
 tags$video(
@@ -190,7 +190,7 @@ knitr::include_graphics("media/emo_rapidity.png")
 
 # What Emotions are not?
 
-Affective states refer to **"valenced (good versus bad) states"** ([Gross, 2010, p.212](https://doi.org/10.1177/1754073910361982)):
+Affective states refer to **"valenced (good versus bad) states"** ([Gross, 2010, p. 212](https://doi.org/10.1177/1754073910361982)):
 
 * Attitudes are **relatively stable beliefs about the goodness or badness of something or someone**
 
@@ -213,7 +213,7 @@ Affective states refer to **"valenced (good versus bad) states"** ([Gross, 2010,
 
 # Holistic Definition of Emotions
 
-> Emotion is defined as *“an **episode of interrelated, synchronized changes** in the states of **all or most of the five organismic subsystems** in **response to the evaluation of an external or internal stimulus** event as relevant to major concerns of the organism”.* - [Scherer (2001, p.93)](https://global.oup.com/academic/product/appraisal-processes-in-emotion-9780195130072)
+> Emotion is defined as *“an **episode of interrelated, synchronized changes** in the states of **all or most of the five organismic subsystems** in **response to the evaluation of an external or internal stimulus** event as relevant to major concerns of the organism”.* - [Scherer (2001, p. 93)](https://global.oup.com/academic/product/appraisal-processes-in-emotion-9780195130072)
 
 --
 
@@ -258,7 +258,7 @@ Emotions have 5 functions each corresponding to a specific component/subsystem:
 
 # Developement of Affective Computing
 
-Despite the usefulness of the Component Process Model, research on emotions have lead to a "conceptual and definitional chaos" ([Buck, 1990, p.330](https://doi.org/10.1207/s15327965pli0104_15)):
+Despite the usefulness of the Component Process Model, research on emotions have lead to a "conceptual and definitional chaos" ([Buck, 1990, p. 330](https://doi.org/10.1207/s15327965pli0104_15)):
 
 * There is still no consensual agreement between researchers
 * Some assumptions of the broad audience are not supported by scientific evidences
@@ -376,9 +376,7 @@ data_expression <- "data/automatic_recognition_data.csv" %>%
 
 # Example of Automatic Recognition (1)
 
-Eight video clips were taken from the [DynEmo database](https://dynemo.univ-grenoble-alpes.fr/?lang=en) and judged by human observers as expressing happiness, surprise, fear and disgust (expressed by both males and females):
-
-* Results for male participants
+Four video clips expressed by males were taken from the [DynEmo database](https://dynemo.univ-grenoble-alpes.fr/?lang=en) and judged by human observers as expressing happiness, surprise, fear and disgust:
 
 ```{r, eval=params$eval_rights, fig.show="hold", out.width="25%", fig.align="default"}
 knitr::include_graphics("../../../Media/dynemo_disgust_m.gif")
@@ -401,15 +399,14 @@ plot <- data_expression %>%
 plotly::ggplotly(plot) %>%
   layout(legend = list(orientation = "h", x = 0.4, y = -0.2))
 ```
+
 .center.tiny[Expression of Disgust correctly recognized, the others led to subtle or incorrect recognition.]
 
 ---
 
 # Example of Automatic Recognition (2)
 
-Eight video clips were taken from the [DynEmo database](https://dynemo.univ-grenoble-alpes.fr/?lang=en) and judged by human observers as expressing happiness, surprise, fear and disgust (expressed by both males and females):
-
-* Results for female participants
+Four video clips expressed by females were taken from the [DynEmo database](https://dynemo.univ-grenoble-alpes.fr/?lang=en) and judged by human observers as expressing happiness, surprise, fear and disgust:
 
 ```{r, eval=params$eval_rights, fig.show="hold", out.width="25%", fig.align="default"}
 knitr::include_graphics("../../../Media/dynemo_disgust_f.gif")
@@ -432,6 +429,7 @@ plot <- data_expression %>%
 plotly::ggplotly(plot) %>%
   layout(legend = list(orientation = "h", x = 0.4, y = -0.2))
 ```
+
 .center.tiny[All four expressions are partially correctly recognized but some non relevant emotions are also recognized.]
 
 ---
@@ -559,7 +557,7 @@ dygraph(data_physio) %>%
   dyLegend(width = 500)
 ```
 
-.center.tiny[Simulation of multivariate physiological measures (5S) including Heart Rate (HR), Breathing Rate (BR), Skin Temperature (ST) and Skin Conductance Level (SCL). All measures are centred and scaled.]
+.center.tiny[Simulation of physiological measures (5s) including Heart Rate (HR), Breathing Rate (BR), Skin Temperature (ST) and Skin Conductance Level (SCL). All measures are centred and scaled.]
 
 ```{r, fig.width=12, fig.height=2}
 data_physio %>% 
@@ -574,6 +572,7 @@ data_physio %>%
   ) %>% 
   draw()
 ```
+
 .center.tiny[Underlying trend behind the multivariate changes identified with a Generalized Additive Model and potentially contributing to changes in Arousal/Activation.]
 
 ---
@@ -622,10 +621,10 @@ Face recognition depends on:
 - Morphological facial configurations
 ]
 
-```{r out.width="60%"}
-knitr::include_graphics("media/fail_face_recognition.png")
+```{r out.width="100%"}
+knitr::include_graphics("media/interstellar_affdex.gif")
 ```
-.center.tiny[Credit: Oddee.com [`r emo::ji("link")`](https://www.oddee.com/item_98248.aspx)]
+.center.tiny[Interstellar by Affdex. Credit: Affectiva [`r emo::ji("link")`](https://www.youtube.com/watch?v=NsmAldoVwDs)]
 
 ]
 
@@ -660,12 +659,14 @@ The precision of devices is not monitored and no standard provides safe guards t
 
 .pull-right[
 ```{r out.width="100%"}
-tweet_screenshot(
-  tweet_url("AI__TECH", "1255878089986338816"),
-  maxwidth = 300,
-  hide_media = FALSE,
-  theme = "dark"
-  )
+# tweetrmd::tweet_screenshot(
+#   tweetrmd::tweet_url("AI__TECH", "1255878089986338816"),
+#   maxwidth = 300,
+#   hide_media = FALSE,
+#   theme = "dark"
+#   )
+
+knitr::include_graphics("media/tweet_ai__tech.png")
 ```
 ]
 
@@ -760,12 +761,13 @@ Despite the development of automatic classifiers on the idea that emotional cate
 
 .pull-right[
 ```{r out.width="100%"}
-tweet_screenshot(
-  tweet_url("truthbegolduk", "1152169980722655232"),
-  maxwidth = 400,
-  hide_media = FALSE,
-  theme = "dark"
-  )
+# tweetrmd::tweet_screenshot(
+#   tweetrmd::tweet_url("truthbegolduk", "1152169980722655232"),
+#   maxwidth = 400,
+#   hide_media = FALSE,
+#   theme = "dark"
+#   )
+knitr::include_graphics("media/tweet_truthbegolduk.png")
 ```
 ]
 
@@ -803,24 +805,27 @@ knitr::include_graphics("media/ai_now.png")
 
 # Future Directions
 
-Warning, do not throw the baby out with the bathwater! "All models are wrong, but some are useful" (Box)
-
-.pull-left[
-The errors in face and physiological measures are reducing with improved techniques and materials.
-
 Most of automatic classifiers of facial expressions have already moved from a classification in categories to a classification in dimensions such as Valence/Pleasure and Arousal/Activation:
 
 * More reliable scientific evidences for a dimensional perspective
 * Not restricted to specific patterns
+
+.pull-left[
+Additionally, errors in face and physiological measures are reducing with improved techniques and materials.
+
+> *"All models are wrong, but some are useful"* - [Box (1979)](https://doi.org/10.1016/B978-0-12-438150-6.50018-2)
+
 ]
 .pull-right[
 ```{r out.width="100%"}
-tweet_screenshot(
-  tweet_url("DigitalTrends", "1184388139395108864"),
-  maxwidth = 400,
-  hide_media = FALSE,
-  theme = "dark"
-  )
+# tweetrmd::tweet_screenshot(
+#   tweetrmd::tweet_url("DigitalTrends", "1184388139395108864"),
+#   maxwidth = 400,
+#   hide_media = FALSE,
+#   theme = "dark"
+#   )
+
+knitr::include_graphics("media/tweet_digitaltrends.png")
 ```
 ]
 
