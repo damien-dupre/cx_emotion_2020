@@ -238,7 +238,6 @@ Emotions have 5 functions each corresponding to a specific component/subsystem:
 
 ```{nomnoml, fig.width=12, fig.height=4}
 #stroke: blue
-#align: center
 
 [Emotion|
   [Cognitive Component]->[Motivational Component]
@@ -246,6 +245,7 @@ Emotions have 5 functions each corresponding to a specific component/subsystem:
   [Cognitive Component]->[Expressive Component]
   [Motivational Component]->[Subjective Component]
   [Physiological Component]->[Subjective Component]
+  [Cognitive Component]->[Subjective Component]
   [Expressive Component]->[Subjective Component]
 ]
 
