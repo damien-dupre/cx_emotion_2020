@@ -13,7 +13,7 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 params:
-  eval_rights: TRUE
+  eval_rights: FALSE
 ---
 
 ```{r setup, include = FALSE}
@@ -45,6 +45,7 @@ library(plotly)
 library(zoo)
 library(dygraphs)
 library(tweetrmd)
+library(fontawesome)
 
 # theme ------------------------------------------------------------------------
 # library(xaringanthemer)
@@ -56,29 +57,29 @@ layout: true
   
 <div class="custom-footer"><span>CX Emotion - Facial and Physiological Expressions of Emotion - Dupré (2020) </span></div>
 
-<!-- --- -->
+---
 
-<!-- # My Journey into Emotion Science -->
+# My Journey into Emotion Science
 
-<!-- #### Developement of the DynEmo Facial Expression Database (Master) -->
+#### Developement of the DynEmo Facial Expression Database (Master)
 
-<!-- * Dynamic and spontaneous emotions -->
-<!-- * Assessed with self-reports and by observers -->
+* Dynamic and spontaneous emotions
+* Assessed with self-reports and by observers
 
-<!-- #### Analysis of Emotional User Experience of Innovative Tech. (Industrial PhD) -->
+#### Analysis of Emotional User Experience of Innovative Tech. (Industrial PhD)
 
-<!-- * Understand users' acceptance of technologies from their emotional response -->
-<!-- * Based on multivariate self-reports -->
+* Understand users' acceptance of technologies from their emotional response
+* Based on multivariate self-reports
 
-<!-- #### Evaluation of Emotions from Facial and Physiological Measures (Industrial PostDoc) -->
+#### Evaluation of Emotions from Facial and Physiological Measures (Industrial PostDoc)
 
-<!-- * Applications to marketing, sports and automotive industries -->
-<!-- * Dynamic changes with trend extraction techniques -->
+* Applications to marketing, sports and automotive industries
+* Dynamic changes with trend extraction techniques (2 patents)
 
-<!-- #### Performance Prediction using Machine Learning (Academic PostDoc) -->
+#### Performance Prediction using Machine Learning (Academic PostDoc)
 
-<!-- * Application to sport analytics -->
-<!-- * Big Data treatment (> 1 million users with activities recorded in the past 5 years) -->
+* Application to sport analytics
+* Big Data treatment (> 1 million users with activities recorded in the past 5 years)
 
 ---
 class: inverse, mline, center, middle
@@ -830,8 +831,13 @@ knitr::include_graphics("media/tweet_digitaltrends.png")
 ]
 
 ---
-class: inverse, mline, center, middle
+class: inverse, mline, left, middle
 
-# Thanks for your attention!
+<img class="circle" src="https://github.com/damien-dupre.png" width="250px"/>
 
-## Questions?
+# Thanks for your attention, find me at...
+
+[`r fa(name = "twitter")` @damien_dupre](http://twitter.com/damien_dupre)  
+[`r fa(name = "github")` @damien-dupre](http://github.com/damien-dupre)  
+[`r fa(name = "link")` damien-datasci-blog.netlify.app](https://damien-datasci-blog.netlify.app)  
+[`r fa(name = "paper-plane")` damien.dupre@dcu.ie](mailto:damien.dupre@dcu.ie)
